@@ -1,0 +1,8 @@
+server:
+  port: 9999
+zuul:
+  ignoredServices: '*'
+  routes:
+    client1:
+      path: /order/**
+      serviceId: leolee-client
