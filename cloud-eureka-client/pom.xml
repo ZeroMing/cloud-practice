@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-enreka-client</artifactId>
+    <artifactId>cloud-eureka-client</artifactId>
 
     <dependencies>
         <dependency>
