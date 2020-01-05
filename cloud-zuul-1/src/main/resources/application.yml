@@ -1,8 +1,29 @@
+spring:
+  application:
+    name: api-gateway
 server:
   port: 9999
 zuul:
-  ignoredServices: '*'
+#  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 60000   #socket超时
   routes:
-    client1:
-      path: /order/**
+    ### 划分区间而已，没有实际作用
+    1:
+      path: /order-service/**
       serviceId: leolee-client
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
