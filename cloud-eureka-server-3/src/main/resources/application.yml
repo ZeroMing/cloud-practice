@@ -1,0 +1,19 @@
+server:
+  port: 8763
+eureka:
+  instance:
+    hostname: leolee-3
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://leolee-1:8761/eureka/,http://leolee-2:8762/eureka/
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
+spring:
+  application:
+    name: eureka-server
