@@ -10,13 +10,8 @@
         <module name="cloud-eureka-server-2" />
         <module name="cloud-eureka-server-1" />
         <module name="cloud-zuul-1" />
-        <module name="cloud-client-2" />
-      </profile>
-      <profile name="Annotation profile for cloud-practice" enabled="true">
-        <sourceOutputDir name="../cloud-client-1/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../cloud-client-1/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="cloud-feign-client-1" />
+        <module name="cloud-client-2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

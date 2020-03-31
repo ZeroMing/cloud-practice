@@ -3,7 +3,6 @@ package org.leolee.zuul;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
-import org.springframework.cloud.netflix.zuul.EnableZuulServer;
 
 /**
  * @author: zeroming@163.com
@@ -13,9 +12,9 @@ import org.springframework.cloud.netflix.zuul.EnableZuulServer;
 
 @SpringBootApplication
 @EnableZuulProxy
-public class BootApplication {
+public class ZuulApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BootApplication.class,args);
+        SpringApplication.run(ZuulApplication.class,args);
     }
 }

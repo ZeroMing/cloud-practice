@@ -13,5 +13,5 @@ feign:
 #  instance:
 #    statusPageUrlPath: ${server.servletPath}/info
 server:
-  port: 0
+  port: 1000
 #    healthCheckUrlPath: ${server.servletPath}/health

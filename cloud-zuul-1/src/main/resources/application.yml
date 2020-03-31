@@ -4,15 +4,18 @@ spring:
 server:
   port: 9999
 zuul:
-#  ignoredServices: '*'
+  ignoredServices:
+    '*'
   host:
     connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
     socket-timeout-millis: 60000   #socket超时
   routes:
     ### 划分区间而已，没有实际作用
-    1:
+    leolee-client-url:
       path: /order-service/**
-      serviceId: leolee-client
+      url: http://127.0.0.1:1000
+  ### 统一前缀
+  prefix: /leolee
 ribbon:
   eureka:
     enabled: true

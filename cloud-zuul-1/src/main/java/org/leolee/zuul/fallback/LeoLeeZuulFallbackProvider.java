@@ -1,4 +1,4 @@
-package org.leolee.zuul;
+package org.leolee.zuul.fallback;
 
 /**
  * @author: zeroming@163.com
@@ -24,7 +24,6 @@ import java.io.InputStream;
  * @version v1.0
  * @date 2018年07月03日 19:54:28
  */
-@Component
 public class LeoLeeZuulFallbackProvider implements FallbackProvider {
 
     @Override
